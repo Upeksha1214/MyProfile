@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Upeksha Sachintha My Profile</title>
-    <link rel="icon" href="D:\Web Develping\MyProfile\assest\icon\upeksha.png">
-    <meta name="description" content="My web Page">
-    <meta name="viewport" content="width=device-width initial-scale=2">
+    <meta charset="UTF-8">
+    <title>My Profile</title>
+    <!--<meta content="IJSE, CMJD, Basic Web Layout, RWAD" name="keywords">-->
+    <meta content="This is for demonstrate how to make a simple web page using css positions" name="description">
+    <meta content="Institute of Software Engineering" name="author">
+    <meta content="Institute of Software Engineering" name="owner">
+    <link href="../assets/icon/upeksha.png" rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="assets/css/normalize.css" rel="stylesheet">
+
 
     <!--<meta name="theme-color" content="green">-->
     <style>
@@ -17,21 +25,77 @@
             right: 500px;
             position: absolute;
         }
-        main{
-            background-color: #0C090A;
-        }
 
-        main > section > section > div > img {
+        body{
+            background-color: #0C090A;
+
+        }
+        /*main > section > section > div > img {
             position: relative;
             width: 1300px;
             margin: 34px;
+        }*/
+        #backgroundImage{
+            position: relative;
+            width: 1300px;
+            top: 43px;
+            left: 23px;
+
         }
-        #my photo {
+
+        #myPhoto {
             top: 160px;
             right: 800px;
             position: absolute;
             height: 887px;
             margin: -115px;
+        }
+        main >section > section:nth-child(1)>  div:nth-child(1) > article> h4{
+            z-index: 10000;
+            background-color:wheat;
+        }
+        #hey{
+            color: #f3f1f1;
+            position: absolute;
+            left: 639px;
+            top: 189px;
+            font-size: 43px;
+
+        }
+        #myname012{
+            position: absolute;
+            color: #f3f1f1;
+            font-size: 60px;
+            top: 321px;
+            left: 630px;
+        }
+        #title{
+            color: #f3f1f1;
+            position: absolute;
+            left: 623px;
+            top: 439px;
+            font-size: 38px;
+        }
+        #information{
+            order-style: solid;
+            background-color: #0C090A;
+            position: absolute;
+            top: 787px;
+            font-size: 31px;
+            border-width: 4px;
+            color: #f3f1f1;
+            left: 641px;
+        }
+
+        /*main >section:nth-child(2)>section>address{
+            background-color: red;
+
+        }*/
+
+        #aboutMe{
+            position: absolute;
+            border: #f3f1f1;
+            background-color:#36454F;
         }
 
 
@@ -45,39 +109,39 @@
 </header>
 <main>
     <section>
-        < !-- home page --->
+        <!--home page-->
         <section>
+
             <dfn id ="home">
 
             <div>
-                <img src="../assest/image/computer room.jpg"  alt="" >
-                <div id="my photo">
-                    <img src="../assest/image/my image.png">
+                <img src="../assets/image/backgroundImage.jpg" alt="" id="backgroundImage" >
+                <div>
+                    <img src="../assets/image/my image.png" id="myPhoto">
                 </div>
                 <article>
 
-                    <b>
-                    <h4>Hey,</h4>
-                    <h2>I’m  Upeksha Sachintha </h2>
-                    <h5>PROGRAMMER, DESINGER AND DEVELOPER</h5>
-                    </b>
+                    <h4 id="hey">Hey,</h4>
+                    <h2 id="myname012">I’m  Upeksha Sachintha </h2>
+                    <h5 id ="title">PROGRAMMER, DESINGER AND DEVELOPER</h5>
 
                 </article>
                 <nav>
 
                 </nav>
             </div>
-            <article>
-                I am a software engineer .Education at IJSE (Institute of Java and Software Enginner) Institute of Higher Education.Education in
-                Programming,OOP,DBMS,Web etc.Course as a member of the GDSE 58 team at Galle branch of IJSE.
+            <article >
+                <p id ="information">I am a software engineer .Education at IJSE<br> (Institute of Java and Software Enginner) Institute <br> of Higher Education.Education in<br>
+                    Programming,OOP,DBMS,Web etc.Course as a<br> member of the GDSE 58 team at Galle branch of<br> IJSE.</p>
             </article>
             </dfn>
 
         </section>
-
+        <!--about me-->
         <section>
-            <section>
+            <section id = "aboutMe">
                 <address>
+
 
                 </address>
             </section>
@@ -110,7 +174,9 @@
 
 <footer>
     <section>
-        <address></address>
+        <address>
+            <h1>Phone Number</h1>
+        </address>
         <address></address>
     </section>
 </footer>
