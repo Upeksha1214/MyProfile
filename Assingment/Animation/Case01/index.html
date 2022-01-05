@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animations 01</title>
+    <style>
+
+        body {
+            background-image: url("assets/0555.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0;
+            height: 573px;
+        }
+
+        section {
+            width: 50vw;
+            height: 40vh;
+            background-color: darkgrey;
+            opacity: 50%;
+        }
+
+        h1 {
+
+            font-size: 120px;
+            font-weight: bolder;
+            font-family: sans-serif;
+            width: max-content;
+            height: max-content;
+        }
+
+        h1, section {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        div {
+            width: 60px;
+            height: 40px;
+            position: absolute;
+            border-radius: 10%;
+            background-color: orange;
+
+        }
+
+        body > div:first-child {
+            animation-name: colorChangeAndRotate, locationDiv1;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+
+        }
+
+        body > div:nth-child(2) {
+            animation-name: colorChangeAndRotate, locationDiv2;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+
+        }
+
+        @keyframes colorChangeAndRotate {
+            0% {
+                background-color: coral;
+                transform: rotate(0deg);
+
+            }
+            12.5% {
+                background-color: yellow;
+                transform: rotate(45deg);
+
+            }
+            25% {
+                background-color: greenyellow;
+                transform: rotate(90deg);
+
+            }
+            37.5% {
+                background-color: blue;
+                transform: rotate(135deg);
+
+            }
+            50% {
+                background-color: indianred;
+                transform: rotate(180deg);
+
+            }
+            62.5% {
+                background-color: purple;
+                transform: rotate(225deg);
+
+            }
+            75% {
+                background-color: deeppink;
+                transform: rotate(270deg);
+
+            }
+            87.5% {
+                background-color: red;
+                transform: rotate(315deg);
+
+            }
+            100% {
+                background-color: orange;
+                transform: rotate(360deg);
+
+            }
+        }
+
+        @keyframes locationDiv1 {
+            0% {
+                top: 10vh;
+                left: 5vw;
+
+            }
+            12.5% {
+                top: 10vh;
+                left: 40vw;
+            }
+            25% {
+                top: 10vh;
+                left: 90vw;
+            }
+            37.5% {
+                top: 40vh;
+                left: 90vw;
+            }
+            50% {
+                top: 90vh;
+                left: 90vw;
+            }
+            62.5% {
+                top: 90vh;
+                left: 40vw;
+            }
+            75% {
+                top: 90vh;
+                left: 5vw;
+            }
+            87.5% {
+                top: 40vh;
+                left: 5vw;
+            }
+            100% {
+                top: 10vh;
+                left: 5vw;
+            }
+        }
+
+        @keyframes locationDiv2 {
+            0% {
+                top: 20vh;
+                left: 10vw;
+
+            }
+            12.5% {
+                top: 20vh;
+                left: 50vw;
+            }
+            25% {
+                top: 20vh;
+                left: 80vw;
+            }
+            37.5% {
+                top: 30vh;
+                left: 80vw;
+            }
+            50% {
+                top: 80vh;
+                left: 80vw;
+            }
+            62.5% {
+                top: 80vh;
+                left: 30vw;
+            }
+            75% {
+                top: 80vh;
+                left: 15vw;
+            }
+            87.5% {
+                top: 30vh;
+                left: 15vw;
+            }
+            100% {
+                top: 20vh;
+                left: 15vw;
+            }
+        }
+    </style>
+</head>
+<body>
+<div>
+</div>
+<div></div>
+<section>
+    <h1>WELCOME</h1>
+</section>
+</body>
+</html>
