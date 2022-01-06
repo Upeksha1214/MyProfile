@@ -30,6 +30,10 @@
         }
 
         body{
+            z-index: 1;
+            position: absolute;
+            height: 50vh;
+            width: 50vw;
             background-color: #0C090A;
 
         }
@@ -252,6 +256,7 @@
             font-family: 'Roboto Condensed', sans-serif;
             top: 61px;
         }
+
         #pythonSkillBar{
             width: 346px;
             background-color: #57E964;
@@ -261,11 +266,13 @@
             top: -314px;
             position: relative;
         }
+
         #skillPython{
             width: 40%; background-color: #E2F516;
             border-radius: 10px;
             color: #E2F516;
         }
+
         #skillHibernateText{
             color: #0000A5;
             font-size: 29px;
@@ -275,6 +282,7 @@
             font-family: 'Roboto Condensed', sans-serif;
             top: 126px;
         }
+
         #hibernateSkillBar{
             width: 346px;
             background-color: #57E964;
@@ -284,11 +292,13 @@
             top: -266px;
             position: relative;;
         }
+
         #skillHibernate{
             width: 90%; background-color: #E2F516;
             border-radius: 10px;
             color: #E2F516;
         }
+
         #skillAdobepsText{
             color: #0000A5;
             font-size: 29px;
@@ -298,6 +308,7 @@
             font-family: 'Roboto Condensed', sans-serif;
             top: 194px;
         }
+
         #adobepsSkillBar{
             width: 346px;
             background-color: #57E964;
@@ -307,11 +318,13 @@
             top: -218px;
             position: relative;
         }
+
         #skillAdobeps{
             width: 60%; background-color: #E2F516;
             border-radius: 10px;
             color: #E2F516;
         }
+
         #skillAdobeXdText{
             color: #0000A5;
             font-size: 29px;
@@ -321,6 +334,7 @@
             font-family: 'Roboto Condensed', sans-serif;
             top: 263px;
         }
+
         #adobeXdSkillBar{
             width: 346px;
             background-color: #57E964;
@@ -330,12 +344,54 @@
             top: -167px;
             position: relative;
         }
+
         #skillAdobeXd{
             width: 75%; background-color: #E2F516;
             border-radius: 10px;
             color: #E2F516;
         }
 
+        #education{
+            width: 1300px;
+            height: 590px;
+            position: absolute;
+            background-color: #8A2BE2;
+            top: 2000px;
+            border-radius: 25px;
+            left: 21px;
+        }
+
+        #educationText{
+            text-decoration:underline;
+            color:#f3f1f1 ;
+            margin: 20px;
+        }
+        #primaryEducation{
+            width: 600px;
+            height: 100px;
+            background-color: #6A0DAD;
+            position: absolute;
+            top: 477px;
+            left: 150px;
+        }
+
+        #primaryEducationText{
+            position: relative;
+            color: #f3f1f1;
+            left: 25px;
+        }
+        #educationPrimary{
+            position: relative;
+            color: #f3f1f1;
+            left: 50px;
+        }
+
+       /* #footer{
+            width: 1300px;
+            height: 590px;
+            position: relative;
+            background-color: #f3f1f1;
+        }*/
     </style>
 </head>
 <body>
@@ -480,27 +536,35 @@
                 </artical>
             </section>
             </dfn>
-        </section>
-        <!--Education-->
-        <section>
-            <article>
 
-            </article>
         </section>
 
+        <!--education-->
+        <section id="education">
+            <h4 id="educationText">Education</h4>
         <section>
-            <article></article>
+            <div id="primaryEducation">
+                <article>
+                    <h3 id="primaryEducationText"> PRIMARY EDUCATION -:</h3>
+                    <h4 id="educationPrimary">Mahinda College</h4>
+                </article>
+            </div>
         </section>
 
         <section>
-            <article></article>
+            <div></div>
+        </section>
+
+        <section>
+            <div></div>
+        </section>
         </section>
     </section>
 
 </main>
 
-<footer>
-    <section>
+<footer id="footer">
+    <section id="">
         <address>
             <h1>Phone Number</h1>
         </address>

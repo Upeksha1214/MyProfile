@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Annimations 02</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        footer {
+
+            position:absolute;
+            height: 25vh;
+            width: 100%;
+            background-color: black;
+            opacity:70%;
+            bottom: 0;
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 50px;
+            font-weight: bolder;
+            color: white;
+
+        }
+
+        p{
+            height: max-content;
+            width: max-content;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;;
+        }
+
+        section {
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            overflow: hidden;
+
+        }
+
+        img {
+            position: relative;
+            flex-shrink: 0;
+            height: 100vh;
+            width: 100vw;
+            animation-name: slider;
+            animation-direction: alternate;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
+
+        }
+
+        @keyframes slider {
+            0%, 16% {
+                left: 0vw;
+            }
+            21%, 37% {
+                left: -100vw;
+            }
+            42%, 58% {
+                left: -200vw;
+            }
+            63%, 79% {
+                left: -300vw;
+            }
+            84%, 100% {
+                left: -400vw;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+<header>
+    <section>
+        <img alt="img" src="assets/image 01.jpg.jpg">
+        <img alt="img" src="assets/image 02.jpg.jpg">
+        <img alt="img" src="assets/image 03.jpg.jpg">
+        <img alt="img" src="assets/image 04.jpg.jpg">
+        <img alt="img" src="assets/image 05.jpg.jpg">
+
+    </section>
+</header>
+<footer><p>IJSE <br> Institute Of Java Software Engineering</p></footer>
+</body>
+</html>
