@@ -7,7 +7,7 @@
     <meta content="This is for demonstrate how to make a simple web page using css positions" name="description">
     <meta content="Institute of Software Engineering" name="author">
     <meta content="Institute of Software Engineering" name="owner">
-    <link href="../assets/icon/upeksha.png" rel="stylesheet">
+    <link href="assets/icon/upeksha.png" rel="stylesheet">
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
@@ -30,10 +30,7 @@
         }
 
         body{
-            z-index: 1;
-            position: absolute;
-            height: 50vh;
-            width: 50vw;
+            
             background-color: #0C090A;
 
         }
@@ -360,6 +357,12 @@
             border-radius: 25px;
             left: 21px;
         }
+        #walking{
+            position: absolute;
+            height: 150px;
+            top: 138px;
+            left: 405px;
+        }
 
         #educationText{
             text-decoration:underline;
@@ -386,6 +389,72 @@
             left: 50px;
         }
 
+        #ordinaryLevelEducation{
+            width: 600px;
+            height: 100px;
+            background-color: #4B0150;
+            position: absolute;
+            top: 377px;
+            left: 309px;
+        }
+
+        #ordinaryEducationText{
+            position: relative;
+            color: #f3f1f1;
+            left: 25px;
+        }
+        #educationOrdinary{
+            position: relative;
+            color: #f3f1f1;
+            left: 50px;
+        }
+
+        #advancedLevelEducation{
+            width: 600px;
+            height: 100px;
+            background-color: #6A287E;
+            position: absolute;
+            top: 277px;
+            left: 424px;
+        }
+        #advancedLevelEducationText{
+            position: relative;
+            color: #f3f1f1;
+            left: 25px;
+        }
+        #educationAdvance{
+            position: relative;
+            color: #f3f1f1;
+            left: 25px;
+        }
+
+        #higherEducation{
+            width: 600px;
+            height: 100px;
+            background-color: #B666D2;
+            position: absolute;
+            top: 176px;
+            left: 530px;
+        }
+        #higherEducationText{
+            position: relative;
+            color: #f3f1f1;
+            left: 25px;
+        }
+        #educationHigher{
+            position: relative;
+            color: #f3f1f1;
+            left: 25px;
+        }
+        #school{
+            position: absolute;
+            width: 292px;
+            top: 391px;
+            left: 979px;
+        }
+
+
+
        /* #footer{
             width: 1300px;
             height: 590px;
@@ -410,9 +479,9 @@
             <dfn id ="home">
 
             <div>
-                <img src="../assets/image/backgroundImage.jpg" alt="" id="backgroundImage" >
+                <img src="assets/image/backgroundImage.jpg" alt="" id="backgroundImage" >
                 <div>
-                    <img src="../assets/image/my image.png" id="myPhoto">
+                    <img src="assets/image/my image.png" id="myPhoto">
                 </div>
                 <article>
 
@@ -541,25 +610,39 @@
 
         <!--education-->
         <section id="education">
+            <img src="../myprojects/assets/icon/walking.png" alt="" id="walking" >
+            <img src="../myprojects/assets/image/school.jpg" alt="" id="school" >
             <h4 id="educationText">Education</h4>
-        <section>
-            <div id="primaryEducation">
+
+            <section id="primaryEducation">
                 <article>
                     <h3 id="primaryEducationText"> PRIMARY EDUCATION -:</h3>
                     <h4 id="educationPrimary">Mahinda College</h4>
                 </article>
-            </div>
-        </section>
+            </section>
 
-        <section>
-            <div></div>
-        </section>
+            <section id="ordinaryLevelEducation">
+                <article>
+                    <h3 id="ordinaryEducationText"> ORDINARY LEVEL EDUCATION -:</h3>
+                    <h4 id="educationOrdinary">Mahinda College</h4>
+                </article>
+            </section>
 
-        <section>
-            <div></div>
+            <section id="advancedLevelEducation">
+                <article>
+                    <h3 id="advancedLevelEducationText">ADAVANCED LEVEL EDUCATION -:</h3>
+                    <h4 id="educationAdvance">Mahinda College</h4>
+                </article>
+            </section>
+
+            <section id="higherEducation">
+            <article>
+                <h3 id="higherEducationText">HIGHER EDUCATION -:</h3>
+                <h4 id="educationHigher">Institute of Java and Software Engineer</h4>
+            </article>
+            </section>
+            </section>
         </section>
-        </section>
-    </section>
 
 </main>
 

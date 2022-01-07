@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 02</title>
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <style>
+        body{
+            background-color:#EBECF1   ;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        section{
+            position: absolute;
+            height: 250px;
+            width: 250px;
+            border-radius: 100%;
+            border: 10px solid silver;
+            background: grey 50%;
+            border-top: 10px solid darkslateblue;
+            transform:rotate(0deg);
+
+        }
+
+        h1{
+            font-family: Quicksand;
+            font-size: 40px;
+            color: black;
+            height: fit-content;
+            width: fit-content;
+            position: absolute;
+            transform:rotate(360deg);
+
+        }
+        section,h1{
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        section:hover h1{
+            transform:rotate(0deg);
+            transition: transform 5s;
+        }
+        section:hover{
+            transform:rotate(360deg);
+            transition: transform 5s;
+        }
+
+    </style>
+</head>
+<body>
+<section>
+    <h1>Upeksha.</h1>
+</section>
+</body>
+</html>

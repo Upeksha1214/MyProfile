@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 01</title>
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <style>
+        * {
+            margin: 0;
+
+        }
+
+        body {
+            background-image: url("assets/computer.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        section {
+            height: 500px;
+            width: 200px;
+            top: 80px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            right: 150px;
+
+
+        }
+
+        div {
+
+            position: relative;
+            background-color: silver;
+            height: 50px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            box-shadow: 4px 4px grey;
+            transition: all 2s;
+            left: 0;
+        }
+
+        div:hover {
+            left: 150px;
+            box-shadow: none;
+            transition: all 2s;
+        }
+
+        img {
+            position: absolute;
+            top: 20%;
+            right: 4%;
+            height: 30px;
+        }
+
+        h3 {
+            font-family: Quicksand;
+            font-weight: bolder;
+            position: absolute;
+            top: 20%;
+            left: 4%;
+        }
+
+        body>section:nth-child(2){
+            font-size: 50px;
+            font-family: Arial;
+            font-weight: bolder;
+            height: max-content;
+            width: max-content;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div><h3>Home</h3><img src="assets/icon/home.png"></div>
+    <div><h3>Services</h3><img src="assets/icon/global-services.png"></div>
+    <div><h3>Gallery</h3><img src="assets/icon/gallery.png"></div>
+    <div><h3>About</h3><img src="assets/icon/information.png"></div>
+    <div><h3>Contact</h3><img src="assets/icon/notebook-of-contacts.png"></div>
+
+
+</section>
+<section>
+    <h1>Institute Of <br> Java <br> Software Engineering</h1>
+
+</section>
+
+</body>
+</html>
