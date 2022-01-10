@@ -15,7 +15,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,700&family=Roboto:ital,wght@0,300;1,500&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
     <!--<meta name="theme-color" content="green">-->
@@ -30,35 +29,33 @@
             position: absolute;
             text-decoration: none;
             background-color: #f3f1f1;
-            width: 500px;
-            height: 41px;
 
         }
 
         body{
-            background-color: #0C090A;
-        }
 
+            background-color: #0C090A;
+
+        }
+        /*main > section > section > div > img {
+            position: relative;
+            width: 1300px;
+            margin: 34px;
+        }*/
         #backgroundImage{
             position: relative;
-            width: 100%;
+            width: 1300px;
             top: 43px;
-            height: 100vh;
-
+            left: 23px;
 
         }
 
         #myPhoto {
-           /* top: 160px;
+            top: 160px;
             right: 800px;
             position: absolute;
             height: 887px;
-            margin: -115px;*/
-            top: 160px;
-            left: 40px;
-            position: absolute;
-            height: 887px;
-
+            margin: -115px;
         }
         main >section > section:nth-child(1)>  div:nth-child(1) > article> h4{
             z-index: 10000;
@@ -753,13 +750,13 @@
             font-family: 'Roboto', sans-serif;
             font-family: 'Roboto Condensed', sans-serif;
         }
-         #footerAd01{
-             color: #f3f1f1;
-             position: absolute;
-             top: 32px;
-             left: 116px;
+        #footerAd01{
+            color: #f3f1f1;
+            position: absolute;
+            top: 32px;
+            left: 116px;
 
-         }
+        }
         #footerAd02{
             position: absolute;
             color: #f3f1f1;
@@ -778,32 +775,6 @@
             top: 155px;
             left: 131px;
         }
-
-        @media all and (max-width: 425px) {
-            #myPhoto {
-                top: 300px;
-            }
-            #myname012 {
-                font-size: 45px;
-            }
-            #title {
-                color: #f3f1f1;
-                position: absolute;
-                left: 622px;
-                top: 488px;
-                font-size: 25px;
-
-            }
-        }
-        /*@media all and (max-width: 768px){
-
-        }
-        @media all and (max-width: 1024px){
-
-        }
-        @media all and (max-width: 1440px){
-
-        }*/
 
     </style>
 </head>
@@ -825,31 +796,31 @@
 
             <dfn id ="home">
 
-            <div>
-                <img src="assets/image/backgroundImage.jpg" alt="" id="backgroundImage" >
+                <div>
+                    <img src="myprojects/assets/image/backgroundImage.jpg" alt="" id="backgroundImage" >
+                    <div>
+                        <img src="myprojects/assets/image/my image.png" id="myPhoto">
+                    </div>
+                    <article>
 
-                    <img src="assets/image/my image.png" id="myPhoto">
+                        <h4 id="hey">Hey,</h4>
+                        <h2 id="myname012">I’m  Upeksha Sachintha </h2>
+                        <h5 id ="title">PROGRAMMER, DESINGER AND DEVELOPER</h5>
+                        <a href="https://www.facebook.com/upeksha.sachintha"><img src="myprojects/assets/icon/fb.png " id="fbIcon"> </a>
+                        <a href="https://www.instagram.com/p_o_d_d_a_9_9_/"><img src="myprojects/assets/icon/instagramIcon.png" id="instagramIcon"></a>
+                        <a href="https://www.messenger.com/t/100053345796376/"><img src="myprojects/assets/icon/messengerIcon.png" id="messengerIcon"></a>
+                        <a href="https://web.whatsapp.com/"><img src="myprojects/assets/icon/whatsappIcon.png" id="whatsappIcon"></a>
+                        <a href="https://web.telegram.org/?legacy=1#/im"><img src="myprojects/assets/icon/telegramIcon.png" id="telegramIcon"></a>
+                        <a href="https://github.com/Upeksha1214"><img src="myprojects/assets/icon/githubIcon.png" id="githubIcon"></a>
+                    </article>
+                    <nav>
 
-                <article>
-
-                    <h4 id="hey">Hey,</h4>
-                    <h2 id="myname012">I’m  Upeksha Sachintha </h2>
-                    <h5 id ="title">PROGRAMMER, DESINGER AND DEVELOPER</h5>
-                    <a href="https://www.facebook.com/upeksha.sachintha"><img src="../myprojects/assets/icon/fb.png " id="fbIcon"> </a>
-                    <a href="https://www.instagram.com/p_o_d_d_a_9_9_/"><img src="../myprojects/assets/icon/instagramIcon.png" id="instagramIcon"></a>
-                    <a href="https://www.messenger.com/t/100053345796376/"><img src="../myprojects/assets/icon/messengerIcon.png" id="messengerIcon"></a>
-                    <a href="https://web.whatsapp.com/"><img src="../myprojects/assets/icon/whatsappIcon.png" id="whatsappIcon"></a>
-                    <a href="https://web.telegram.org/?legacy=1#/im"><img src="../myprojects/assets/icon/telegramIcon.png" id="telegramIcon"></a>
-                    <a href="https://github.com/Upeksha1214"><img src="../myprojects/assets/icon/githubIcon.png" id="githubIcon"></a>
+                    </nav>
+                </div>
+                <article >
+                    <p id ="information">I am a software engineer .Education at IJSE<br> (Institute of Java and Software Enginner) Institute <br> of Higher Education.Education in<br>
+                        Programming,OOP,DBMS,Web etc.Course as a<br> member of the GDSE 58 team at Galle branch of<br> IJSE.</p>
                 </article>
-                <nav>
-
-                </nav>
-            </div>
-            <article >
-                <p id ="information">I am a software engineer .Education at IJSE<br> (Institute of Java and Software Enginner) Institute <br> of Higher Education.Education in<br>
-                    Programming,OOP,DBMS,Web etc.Course as a<br> member of the GDSE 58 team at Galle branch of<br> IJSE.</p>
-            </article>
             </dfn>
 
         </section>
@@ -857,34 +828,34 @@
         <section>
             <section >
                 <dfn id="aboutMe">
-                <div id = "aboutMe01">
+                    <div id = "aboutMe01">
 
-                    <h4 id="aboutMeText" >About Me</h4>
-                    <div ID="personalDetails">
-                        <br>
-                        Personal Details -:<br><br>
-                        Name-: Kumaranahalage Upeksha Sachintha
-                        Kularathnna<br><br>
-                        Age  -: 22<br><br>
-                        Address -: K.u.s.s.Kularathnna,Baswathnna,
-                        Narawala,Poddala<br><br>
-                        School -: Mahinda College Galle<br><br>
-                        Contact-: 071-1923150<br><br>
-                        Email -: upekshasachintha@gmail.com<br><br>
+                        <h4 id="aboutMeText" >About Me</h4>
+                        <div ID="personalDetails">
+                            <br>
+                            Personal Details -:<br><br>
+                            Name-: Kumaranahalage Upeksha Sachintha
+                            Kularathnna<br><br>
+                            Age  -: 22<br><br>
+                            Address -: K.u.s.s.Kularathnna,Baswathnna,
+                            Narawala,Poddala<br><br>
+                            School -: Mahinda College Galle<br><br>
+                            Contact-: 071-1923150<br><br>
+                            Email -: upekshasachintha@gmail.com<br><br>
+                        </div>
+
+                        <article id="interestedIn">
+                            <dl>
+                                <dt>Interested In :-</dt>
+                                <dd><br>*Programing</dd>
+                                <dd><br>*Listning Music </dd>
+                                <dd><br>*Watching Movies </dd>
+                                <dd><br>*Gaming </dd>
+                                <dd><br>*Traveling </dd>
+                                <dd><br>*Swimming</dd>
+                            </dl>
+                        </article>
                     </div>
-
-                    <article id="interestedIn">
-                        <dl>
-                            <dt>Interested In :-</dt>
-                            <dd><br>*Programing</dd>
-                            <dd><br>*Listning Music </dd>
-                            <dd><br>*Watching Movies </dd>
-                            <dd><br>*Gaming </dd>
-                            <dd><br>*Traveling </dd>
-                            <dd><br>*Swimming</dd>
-                        </dl>
-                    </article>
-                </div>
                 </dfn>
             </section>
 
@@ -896,173 +867,173 @@
         <section>
             <section>
                 <dfn id="skill">
-                <artical id="skill01" >
-                    <h4 id="skillText">Skill</h4>
-                    <!--javaSkillBar-->
-                    <div id="skillBar">
-                        <P id="JavaSkillText">Java -:</P>
-                        <div id="javaSkillBar">
-                            <div id="skillJava">70%</div>
+                    <artical id="skill01" >
+                        <h4 id="skillText">Skill</h4>
+                        <!--javaSkillBar-->
+                        <div id="skillBar">
+                            <P id="JavaSkillText">Java -:</P>
+                            <div id="javaSkillBar">
+                                <div id="skillJava">70%</div>
+                            </div>
                         </div>
-                    </div>
-                    <!--mySqlSkillBar-->
-                    <div>
-                        <p id="skillMySQLText">My SQL -:</p>
-                        <div id="mySqlSkillBar">
-                            <div id="skillMySql">85%</div>
+                        <!--mySqlSkillBar-->
+                        <div>
+                            <p id="skillMySQLText">My SQL -:</p>
+                            <div id="mySqlSkillBar">
+                                <div id="skillMySql">85%</div>
+                            </div>
                         </div>
-                    </div>
-                    <!--htmlSkillBar-->
-                    <div>
-                        <P id="skillHtmlText">HTML -:</P>
-                        <div id="htmlSkillBar">
-                            <div id="skillHtml">80%</div>
+                        <!--htmlSkillBar-->
+                        <div>
+                            <P id="skillHtmlText">HTML -:</P>
+                            <div id="htmlSkillBar">
+                                <div id="skillHtml">80%</div>
+                            </div>
                         </div>
-                    </div>
-                    <!--cssSkillBar-->
-                    <div >
-                        <p id="skillCssText">CSS -:</p>
-                        <div id="cssSkillBar">
-                            <div id="skillCss">85%</div>
+                        <!--cssSkillBar-->
+                        <div >
+                            <p id="skillCssText">CSS -:</p>
+                            <div id="cssSkillBar">
+                                <div id="skillCss">85%</div>
+                            </div>
                         </div>
-                    </div>
-                    <!--python-->
-                    <div >
-                        <p id="skillPythonText">Python -:</p>
-                        <div id="pythonSkillBar">
-                            <div id="skillPython">40%</div>
+                        <!--python-->
+                        <div >
+                            <p id="skillPythonText">Python -:</p>
+                            <div id="pythonSkillBar">
+                                <div id="skillPython">40%</div>
+                            </div>
                         </div>
-                    </div>
-                    <!--Hibernate-->
-                    <div >
-                        <p id="skillHibernateText">Hibernate -:</p>
-                        <div id="hibernateSkillBar">
-                            <div id="skillHibernate">60%</div>
+                        <!--Hibernate-->
+                        <div >
+                            <p id="skillHibernateText">Hibernate -:</p>
+                            <div id="hibernateSkillBar">
+                                <div id="skillHibernate">60%</div>
+                            </div>
                         </div>
-                    </div>
-                    <!--Adobeps-->
-                    <div >
-                        <p id="skillAdobepsText">Adobe PS -:</p>
-                        <div id="adobepsSkillBar">
-                            <div id="skillAdobeps">50%</div>
+                        <!--Adobeps-->
+                        <div >
+                            <p id="skillAdobepsText">Adobe PS -:</p>
+                            <div id="adobepsSkillBar">
+                                <div id="skillAdobeps">50%</div>
+                            </div>
                         </div>
-                    </div>
-                    <!--AdobeXd-->
-                    <div >
-                        <p id="skillAdobeXdText">Adobe XD -:</p>
-                        <div id="adobeXdSkillBar">
-                            <div id="skillAdobeXd">55%</div>
+                        <!--AdobeXd-->
+                        <div >
+                            <p id="skillAdobeXdText">Adobe XD -:</p>
+                            <div id="adobeXdSkillBar">
+                                <div id="skillAdobeXd">55%</div>
+                            </div>
                         </div>
-                    </div>
-                </artical>
+                    </artical>
                 </dfn>
             </section>
         </section>
         <!--education-->
         <section id="education">
             <dfn id="education01">
-            <img src="../myprojects/assets/icon/walking.png" alt="" id="walking" >
-            <img src="../myprojects/assets/image/school.jpg" alt="" id="school" >
-            <h4 id="educationText">Education</h4>
+                <img src="myprojects/assets/icon/walking.png" alt="" id="walking" >
+                <img src="myprojects/assets/image/school.jpg" alt="" id="school" >
+                <h4 id="educationText">Education</h4>
 
-            <section id="primaryEducation">
-                <article>
-                    <h3 id="primaryEducationText"> PRIMARY EDUCATION -:</h3>
-                    <h4 id="educationPrimary">Mahinda College</h4>
-                </article>
-            </section>
+                <section id="primaryEducation">
+                    <article>
+                        <h3 id="primaryEducationText"> PRIMARY EDUCATION -:</h3>
+                        <h4 id="educationPrimary">Mahinda College</h4>
+                    </article>
+                </section>
 
-            <section id="ordinaryLevelEducation">
-                <article>
-                    <h3 id="ordinaryEducationText"> ORDINARY LEVEL EDUCATION -:</h3>
-                    <h4 id="educationOrdinary">Mahinda College</h4>
-                </article>
-            </section>
+                <section id="ordinaryLevelEducation">
+                    <article>
+                        <h3 id="ordinaryEducationText"> ORDINARY LEVEL EDUCATION -:</h3>
+                        <h4 id="educationOrdinary">Mahinda College</h4>
+                    </article>
+                </section>
 
-            <section id="advancedLevelEducation">
-                <article>
-                    <h3 id="advancedLevelEducationText">ADAVANCED LEVEL EDUCATION -:</h3>
-                    <h4 id="educationAdvance">Mahinda College</h4>
-                </article>
-            </section>
+                <section id="advancedLevelEducation">
+                    <article>
+                        <h3 id="advancedLevelEducationText">ADAVANCED LEVEL EDUCATION -:</h3>
+                        <h4 id="educationAdvance">Mahinda College</h4>
+                    </article>
+                </section>
 
-            <section id="higherEducation">
-            <article>
-                <h3 id="higherEducationText">HIGHER EDUCATION -:</h3>
-                <h4 id="educationHigher">Institute of Java and Software Engineer</h4>
-            </article>
-            </section>
+                <section id="higherEducation">
+                    <article>
+                        <h3 id="higherEducationText">HIGHER EDUCATION -:</h3>
+                        <h4 id="educationHigher">Institute of Java and Software Engineer</h4>
+                    </article>
+                </section>
             </dfn>
-            </section>
+        </section>
         <!--assignment-->
         <section id="assignment">
             <dfn id="assignmentDfn">
-            <h4 id="assignmentText">Assignment</h4>
-            <section id="assignmentBackground">
-                <section>
-                    <div id="assignment01">
-                        <img src="assets/image/Assignment.png" id="assignment01img">
-                        <a href="../Assingment/Assignment01/assingment.html" id="assignment01Document">Assignment 01 </a>
-                    </div>
+                <h4 id="assignmentText">Assignment</h4>
+                <section id="assignmentBackground">
+                    <section>
+                        <div id="assignment01">
+                            <img src="myprojects/assets/image/Assignment.png" id="assignment01img">
+                            <a href="../Assingment/Assignment01/assingment.html" id="assignment01Document">Assignment 01 </a>
+                        </div>
 
-                    <div id="assignment02">
-                        <img src="assets/image/Assignment.png" id="assignment02img">
-                        <a href="../Assingment/Assignment02/assingment02.html" id="assignment02Document">Assignment 02</a>
-                    </div>
+                        <div id="assignment02">
+                            <img src="myprojects/assets/image/Assignment.png" id="assignment02img">
+                            <a href="../Assingment/Assignment02/assingment02.html" id="assignment02Document">Assignment 02</a>
+                        </div>
 
-                    <div id="assignment03">
-                        <img src="assets/image/Assignment.png" id="assignment03img">
-                        <a href="../Assingment/Assignment03/assingment03.html" id="assignment03Document">Assignment 03</a>
-                    </div>
+                        <div id="assignment03">
+                            <img src="myprojects/assets/image/Assignment.png" id="assignment03img">
+                            <a href="../Assingment/Assignment03/assingment03.html" id="assignment03Document">Assignment 03</a>
+                        </div>
 
-                    <div id="assignment04">
-                        <img src="assets/image/Assignment.png" id="assignment04img">
-                        <a href="../Assingment/Assignment04/Assingmet 04.html" id="assignment04Document">Assignment 04</a>
-                    </div>
+                        <div id="assignment04">
+                            <img src="myprojects/assets/image/Assignment.png" id="assignment04img">
+                            <a href="../Assingment/Assignment04/Assingmet 04.html" id="assignment04Document">Assignment 04</a>
+                        </div>
 
-                    <div id="assignment05">
-                        <img src="assets/image/Assignment.png" id="assignment05img">
-                        <a href="../Assingment/Transitions/case01/index.html" id="assignment05Document">Assignment 05</a>
-                    </div>
+                        <div id="assignment05">
+                            <img src="myprojects/assets/image/Assignment.png" id="assignment05img">
+                            <a href="../Assingment/Transitions/case01/index.html" id="assignment05Document">Assignment 05</a>
+                        </div>
 
-                    <div id="assignment06">
-                        <img src="assets/image/Assignment.png" id="assignment06img">
-                        <a href="../Assingment/Transitions/case02/index.html" id="assignment06Document">Assignment 06</a>
-                    </div>
+                        <div id="assignment06">
+                            <img src="myprojects/assets/image/Assignment.png" id="assignment06img">
+                            <a href="../Assingment/Transitions/case02/index.html" id="assignment06Document">Assignment 06</a>
+                        </div>
 
-                    <div id="assignment07">
-                        <img src="assets/image/Assignment.png" id="assignment07img">
-                        <a href="../Assingment/Animation/Case01/index.html" id="assignment07Document">Assignment 07</a>
-                    </div>
+                        <div id="assignment07">
+                            <img src="myprojects/assets/image/Assignment.png" id="assignment07img">
+                            <a href="../Assingment/Animation/Case01/index.html" id="assignment07Document">Assignment 07</a>
+                        </div>
 
-                    <div id="assignment08">
-                        <img src="assets/image/Assignment.png" id="assignment08img">
-                        <a href="../Assingment/Animation/Case02/index.html" id="assignment08Document">Assignment 08</a>
-                    </div>
+                        <div id="assignment08">
+                            <img src="myprojects/assets/image/Assignment.png" id="assignment08img">
+                            <a href="../Assingment/Animation/Case02/index.html" id="assignment08Document">Assignment 08</a>
+                        </div>
 
-                    <div id="assignment09">
-                        <img src="assets/image/Assignment.png" id="assignment09img">
-                        <a href="../Assingment/Animation/Case03/index.html" id="assignment09Document">Assignment 09</a>
-                    </div>
+                        <div id="assignment09">
+                            <img src="myprojects/assets/image/Assignment.png" id="assignment09img">
+                            <a href="../Assingment/Animation/Case03/index.html" id="assignment09Document">Assignment 09</a>
+                        </div>
 
-                    <div id="assignment10">
-                        <img src="assets/image/Assignment.png" id="assignment10img">
-                        <a href="../Assingment/Animation/Case04/index.html" id="assignment10Document">Assignment 10</a>
-                    </div>
+                        <div id="assignment10">
+                            <img src="myprojects/assets/image/Assignment.png" id="assignment10img">
+                            <a href="../Assingment/Animation/Case04/index.html" id="assignment10Document">Assignment 10</a>
+                        </div>
+                    </section>
                 </section>
-            </section>
             </dfn>
         </section>
         <!--projects-->
         <section id="projects" >
             <dfn id="projects01">
-            <h4 id="projectsText" >Projects</h4>
-            <section id="projectsBackground">
-                <a href="https://github.com/Upeksha1214/MyProfile" id="projectsText01"> Projects 01 </a>
-                <a href="https://github.com/Upeksha1214/MyProfile"> <img src="../myprojects/assets/image/Assignment.png" id="projectsImg01"> </a>
-                <a href="https://github.com/Upeksha1214/1st-semester-final-project" id="projectsText02"> Projects 02 </a>
-                <a href="https://github.com/Upeksha1214/1st-semester-final-project"><img src="../myprojects/assets/image/Assignment.png" id="projectsImg02"></a>
-            </section>
+                <h4 id="projectsText" >Projects</h4>
+                <section id="projectsBackground">
+                    <a href="https://github.com/Upeksha1214/MyProfile" id="projectsText01"> Projects 01 </a>
+                    <a href="https://github.com/Upeksha1214/MyProfile"> <img src="myprojects/assets/image/Assignment.png" id="projectsImg01"> </a>
+                    <a href="https://github.com/Upeksha1214/1st-semester-final-project" id="projectsText02"> Projects 02 </a>
+                    <a href="https://github.com/Upeksha1214/1st-semester-final-project"><img src="myprojects/assets/image/Assignment.png" id="projectsImg02"></a>
+                </section>
             </dfn>
         </section>
 
