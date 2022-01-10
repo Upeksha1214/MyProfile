@@ -7,6 +7,7 @@
     <meta content="This is for demonstrate how to make a simple web page using css positions" name="description">
     <meta content="Institute of Software Engineering" name="author">
     <meta content="Institute of Software Engineering" name="owner">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
     <link href="assets/icon/upeksha.png" rel="stylesheet">
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
@@ -15,7 +16,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,700&family=Roboto:ital,wght@0,300;1,500&display=swap" rel="stylesheet">
-    <!--<meta content="width=device-width, initial-scale=1" name="viewport">-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,700&family=Roboto:ital,wght@0,300;1,500&display=swap" rel="stylesheet">
 
 
     <!--<meta name="theme-color" content="green">-->
@@ -68,6 +71,8 @@
             left: 639px;
             top: 189px;
             font-size: 43px;
+            font-family: 'Roboto', sans-serif;
+            font-family: 'Roboto Condensed', sans-serif;
 
         }
         #myname012{
@@ -76,6 +81,8 @@
             font-size: 60px;
             top: 321px;
             left: 630px;
+            font-family: 'Roboto', sans-serif;
+            font-family: 'Roboto Condensed', sans-serif;
         }
         #title{
             color: #f3f1f1;
@@ -83,6 +90,8 @@
             left: 623px;
             top: 439px;
             font-size: 38px;
+            font-family: 'Roboto', sans-serif;
+            font-family: 'Roboto Condensed', sans-serif;
         }
 
         #fbIcon{
@@ -133,6 +142,8 @@
             border-width: 4px;
             color: #f3f1f1;
             left: 641px;
+            font-family: 'Roboto', sans-serif;
+            font-family: 'Roboto Condensed', sans-serif;
         }
 
         #aboutMe01{
@@ -157,6 +168,8 @@
             border-radius: 25px;
             margin-left: 27px;
             color: #f3f1f1;
+            font-family: 'Roboto', sans-serif;
+            font-family: 'Roboto Condensed', sans-serif;
         }
         #interestedIn{
             position: relative;
@@ -167,6 +180,8 @@
             left: 675px;
             width: 583px;
             top: -270px;
+            font-family: 'Roboto', sans-serif;
+            font-family: 'Roboto Condensed', sans-serif;
 
         }
 
@@ -777,10 +792,97 @@
             left: 131px;
         }
 
-       /* @media all and ( max-width: 320px){
-        }*/
+        @media all and ( max-width: 320px) {
+            header > nav {
+                right: 0px;
+            }
 
-    </style>
+            #backgroundImage {
+                position: relative;
+                width: 276px;
+                top: 52px;
+                left: 14px;
+            }
+
+            #myPhoto {
+                top: 177px;
+                left: 121px;
+                height: 170px;
+            }
+            #hey {
+                left: 138px;
+                top: 86px;
+                font-size: 8px;
+            }
+            #myname012 {
+                font-size: 15PX;
+                top: 106px;
+                left: 131px;
+            }
+            #title {
+                left: 128px;
+                top: 126px;
+                font-size: 9px;
+            }
+
+            #fbIcon {
+                height: 12px;
+                top: 170px;
+                left: 151px;
+            }
+            #instagramIcon {
+                height: 12px;
+                top: 171px;
+                left: 162px;
+            }
+            #messengerIcon {
+                height: 12px;
+                top: 171px;
+                left: 173px;
+            }
+            #whatsappIcon {
+                height: 12PX;
+                top: 170PX;
+                left: 184px;
+            }
+            #telegramIcon {
+                height: 12px;
+                top: 170px;
+                left: 195PX;
+            }
+            #githubIcon {
+                height: 12PX;
+                top: 170px;
+                left: 205px;
+            }
+            #information {
+                position: absolute;
+                top: 208px;
+                font-size: 9px;
+                border-width: 0px;
+                color: #f3f1f1;
+                left: 115px;
+            }
+            #aboutMe01 {
+                width: 280px;
+                height: 740px;
+                top: 290px;
+                left: 25px;
+            }
+            #personalDetails {
+                width: 240px;
+                margin-left: 19px;
+            }
+            #interestedIn {
+                left: 21px;
+                width: 236px;
+                top: 10px;
+            }
+            
+
+        }
+
+</style>
 </head>
 <body>
 <header>
