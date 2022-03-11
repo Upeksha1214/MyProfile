@@ -9,25 +9,25 @@
 
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">ABC Supermarket</a>
+        <a class="navbar-brand text-white brandName" href="#">ABC Supermarket</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link text-white" href="#">Link</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Dropdown
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="#">Action</a></li>
                         <li><a class="dropdown-item" href="#">Another action</a></li>
                         <li><hr class="dropdown-divider"></li>
@@ -35,13 +35,15 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
+                    <a class="nav-link disabled text-white">Disabled</a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
-<section class="row">
+<section id="orderContent" class="row" style="width: 1300px;
+    margin-right: 0px;
+    margin-left: 5px;">
     <section class="col-3">
         <h1 class="bg-primary"><span class="badge">Invoice Details</span></h1>
         <div>
@@ -97,12 +99,12 @@
         <button type="button" class="btn btn-danger">Add</button>
     </section>
 
-    <section class="col">
+    <section class="col-4">
         <div>
-        <label for="formGroupExampleInput" class="form-label" >Total : 00000.00</label>
+            <label for="formGroupExampleInput" class="form-label" >Total : 00000.00</label>
         </div>
         <div>
-        <label for="formGroupExampleInput" class="form-label" >SubTotal : 00000.00</label>
+            <label for="formGroupExampleInput" class="form-label" >SubTotal : 00000.00</label>
         </div>
         <div>
             <label for="formGroupExampleInput" class="form-label">Cash :</label>
@@ -117,31 +119,34 @@
             <input type="text" class="form-control" id="formGroupExampleInput13" placeholder="" >
         </div>
         <button type="button" class="btn btn-success">Purchase</button>
+
+
     </section>
-</section>
-<section class="row">
-    <table class="table">
-        <thead>
-        <tr>
-            <th scope="col"></th>
-            <th scope="col">Item Code</th>
-            <th scope="col">Item Name</th>
-            <th scope="col">Price</th>
-            <th scope="col">Quantity</th>
-            <th scope="col">Total</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <th scope="row">1</th>
-            <td>I001</td>
-            <td>Bag</td>
-            <td>1800.00</td>
-            <td>1</td>
-            <td>1800.00</td>
-        </tr>
-        </tbody>
-    </table>
+    <section class="row" style="width: 1290px; margin-right: 0px; margin-left: 5px;">
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col"></th>
+                <th scope="col">Item Code</th>
+                <th scope="col">Item Name</th>
+                <th scope="col">Price</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Total</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>I001</td>
+                <td>Bag</td>
+                <td>1800.00</td>
+                <td>1</td>
+                <td>1800.00</td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+    <!--order content End-->
 </section>
 
 

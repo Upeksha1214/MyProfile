@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ABS Supermarket</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../../Css%20Frameworks/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../Css%20Frameworks/assets/styles/style.css" rel="stylesheet">
+
+
+</head>
+<body>
+
+<!--Oder-->
+<nav class="navbar navbar-expand-lg navbar-light navColor" id="CustomeerPage">
+    <div class="container-fluid">
+        <a class="navbar-brand fw-bolder text-white brandName" href="#">Simple POS
+        </a>
+        <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                class="navbar-toggler"
+                data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a aria-current="page" class="nav-link active text-white" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Order</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a aria-expanded="false" class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown"
+                       href="#"
+                       id="navbarDropdown" role="button">
+                        Other
+                    </a>
+                    <ul aria-labelledby="navbarDropdown" class="dropdown-menu">
+                        <li><a class="dropdown-item" href="addCustomer.html">Customer Manage</a></li>
+                        <li><a class="dropdown-item" href="newItem.html">Item Manage</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Purchase Order</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section class="row" id="oderContent">
+    <section class="col-3">
+        <h1 class="bg-primary"><span class="badge">Invoice Details</span></h1>
+        <div>
+            <label for="formGroupExampleInput" class="form-label">Order Id :</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="" >
+        </div>
+        <div>
+            <label for="formGroupExampleInput" class="form-label">Date :</label>
+            <input type="text" class="form-control" id="formGroupExampleInput1" placeholder="" >
+        </div>
+        <div>
+            <label for="formGroupExampleInput" class="form-label">Name :</label>
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="" >
+        </div>
+        <div>
+            <label for="formGroupExampleInput" class="form-label">Salary :</label>
+            <input type="text" class="form-control" id="formGroupExampleInput3" placeholder="" >
+        </div>
+        <div>
+            <label for="formGroupExampleInput" class="form-label">Address :</label>
+            <input type="text" class="form-control" id="formGroupExampleInput4" placeholder="" >
+        </div>
+    </section>
+
+
+    <section class="col-5">
+        <h1 class="bg-primary"><span class="badge">Invoice Details</span></h1>
+        <div>
+            <label for="formGroupExampleInput" class="form-label">Item :</label>
+            <input type="text" class="form-control" id="formGroupExampleInput5" placeholder="" >
+        </div>
+        <div>
+            <label for="formGroupExampleInput" class="form-label">Item Code :</label>
+            <input type="text" class="form-control" id="formGroupExampleInput6" placeholder="" >
+        </div>
+        <div>
+            <label for="formGroupExampleInput" class="form-label">Item Name :</label>
+            <input type="text" class="form-control" id="formGroupExampleInput7" placeholder="" >
+        </div>
+        <div>
+            <label for="formGroupExampleInput" class="form-label">Price :</label>
+            <input type="text" class="form-control" id="formGroupExampleInput8" placeholder="" >
+        </div>
+        <div>
+            <label for="formGroupExampleInput" class="form-label">QtyOnHand :</label>
+            <input type="text" class="form-control" id="formGroupExampleInput9" placeholder="" >
+        </div>
+        <div>
+            <label for="formGroupExampleInput" class="form-label">Order Qty :</label>
+            <input type="text" class="form-control" id="formGroupExampleInput10" placeholder="" >
+        </div>
+
+        <button type="button" class="btn btn-danger">Add</button>
+    </section>
+
+    <section class="col-4">
+        <div>
+        <label for="formGroupExampleInput" class="form-label" >Total : 00000.00</label>
+        </div>
+        <div>
+        <label for="formGroupExampleInput" class="form-label" >SubTotal : 00000.00</label>
+        </div>
+        <div>
+            <label for="formGroupExampleInput" class="form-label">Cash :</label>
+            <input type="text" class="form-control" id="formGroupExampleInput11" placeholder="" >
+        </div>
+        <div>
+            <label for="formGroupExampleInput" class="form-label">Discount :</label>
+            <input type="text" class="form-control" id="formGroupExampleInput12" placeholder="" >
+        </div>
+        <div>
+            <label for="formGroupExampleInput" class="form-label">Balance :</label>
+            <input type="text" class="form-control" id="formGroupExampleInput13" placeholder="" >
+        </div>
+        <button type="button" class="btn btn-success">Purchase</button>
+    </section>
+</section>
+<section class="row">
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col"></th>
+            <th scope="col">Item Code</th>
+            <th scope="col">Item Name</th>
+            <th scope="col">Price</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Total</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>I001</td>
+            <td>Bag</td>
+            <td>1800.00</td>
+            <td>1</td>
+            <td>1800.00</td>
+        </tr>
+        </tbody>
+    </table>
+</section>
+
+<!--Customer-->
+
+<!--<nav class="navbar navbar-expand-lg navbar-light navColor" id="CustomeerPage">
+    <div class="container-fluid">
+        <a class="navbar-brand fw-bolder text-white brandName" href="#">Simple POS
+        </a>
+        <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                class="navbar-toggler"
+                data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a aria-current="page" class="nav-link active text-white" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Order</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a aria-expanded="false" class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown"
+                       href="#"
+                       id="navbarDropdown" role="button">
+                        Other
+                    </a>
+                    <ul aria-labelledby="navbarDropdown" class="dropdown-menu">
+                        <li><a class="dropdown-item" href="addCustomer.html">Customer Manage</a></li>
+                        <li><a class="dropdown-item" href="newItem.html">Item Manage</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Purchase Order</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>-->
+
+
+<section class="container-fluid mt-3" id="customerContent">
+    <h1 class="bg-primary"><span class="badge">New Customer</span></h1>
+
+    <section class="row mt-3 justify-content-around">
+        <div class="col-12 col-md-5">
+            <div class="mb-3">
+                <label class="form-label" for="txtCusID">Customer ID</label>
+                <input class="form-control" id="txtCusID" placeholder="Customer ID" type="text">
+                <p><small class="text-danger pl-1" id="lblcusid"></small></p>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="txtCusName">Customer Name</label>
+                <input class="form-control" id="txtCusName" placeholder="Customer Name" type="text">
+                <p><small class="text-danger pl-1" id="lblcusname"></small></p>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="txtCusAddress">Customer Address</label>
+                <input class="form-control" id="txtCusAddress" placeholder="Customer Address" type="text">
+                <p><small class="text-danger pl-1" id="lblcusaddress"></small></p>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="txtCusSalary">Customer Salary</label>
+                <input class="form-control" id="txtCusSalary" placeholder="Customer Salary" type="text">
+                <p><small class="text-danger pl-1" id="lblcussalary"></small></p>
+            </div>
+        </div>
+        <div class="col-12 col-md-4">
+            <div class="shadow-sm pt-3 pb-5 px-3 py-3 mt-2">
+                <h1 class="h1 mb-3">Customer Manage</h1>
+                <div class="mb-3">
+                    <label class="form-label" for="txtSearchCusID">Search Customer</label>
+                    <input class="form-control" id="txtSearchCusID" placeholder="Customer ID, NIC, Name" type="text">
+                </div>
+                <button class="btn btn-primary" id="btnCusSearch">Search</button>
+                <button class="btn btn-danger">Delete</button>
+                <button class="btn btn-success" id="btnCustomer">Save or Update</button>
+                <!--<button class="btn btn-warning" id="btnViewAll">View All</button>-->
+            </div>
+        </div>
+    </section>
+    <section class="row mt-4">
+        <div class="col">
+            <table class="table table-hover">
+                <thead class="bg-success text-white">
+                <tr>
+                    <th>Customer ID</th>
+                    <th>Customer Name</th>
+                    <th>Customer Address</th>
+                    <th>Customer Salary</th>
+                </tr>
+                </thead>
+                <tbody id="customerTable">
+                <tbody>
+            </table>
+        </div>
+    </section>
+</section>
+<script src="../../Css%20Frameworks/assets/jQuery/jquery-3.6.0.min.js"></script>
+<script src="../../Css%20Frameworks/assets/js/bootstrap.min.js"></script>
+<script src="../db/DB.js"></script>
+<script src="controller/customerController.js"></script>
+
+
+<!--item-->
+<!--<nav class="navbar navbar-expand-lg navbar-light navColor" id="itemPage">
+    <div class="container-fluid">
+        <a class="navbar-brand fw-bolder text-white brandName" href="#">Simple POS
+        </a>
+        <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                class="navbar-toggler"
+                data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a aria-current="page" class="nav-link active text-white" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Order</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a aria-expanded="false" class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown"
+                       href="#"
+                       id="navbarDropdown" role="button">
+                        Other
+                    </a>
+                    <ul aria-labelledby="navbarDropdown" class="dropdown-menu">
+                        <li><a class="dropdown-item" href="addCustomer.html">Customer Manage</a></li>
+                        <li><a class="dropdown-item" href="newItem.html">Item Manage</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Purchase Order</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>-->
+
+
+<!--
+<div>
+    <label for="formGroupExampleInput" class="form-label">Item Code:</label>
+    <input type="text" class="form-control" id="formGroupExampleInput" item="" >
+</div>
+<div>
+    <label for="formGroupExampleInput" class="form-label">Item Name :</label>
+    <input type="text" class="form-control" id="formGroupExampleInput1" item="" >
+</div>
+<div>
+    <label for="formGroupExampleInput" class="form-label">Item Price :</label>
+    <input type="text" class="form-control" id="formGroupExampleInput2" item="" >
+</div>
+<div>
+    <label for="formGroupExampleInput" class="form-label">Item Quantity:</label>
+    <input type="text" class="form-control" id="formGroupExampleInput3" item="" >
+</div>
+<button type="button" class="btn btn-danger">Save</button>
+<button type="button" class="btn btn-warning">Renew</button>
+<button type="button" class="btn btn-info">Close</button>
+-->
+<section class="container-fluid mt-3" id="itemContent">
+    <h1 class="bg-primary"><span class="badge">New Item</span></h1>
+    <section class="row mt-3 justify-content-around">
+        <div class="col-12 col-md-5">
+            <div class="mb-3">
+                <label class="form-label" for="itemCode">Item Code</label>
+                <input class="form-control" id="itemCode" placeholder="Item Code" type="text">
+                <p><small class="text-danger pl-1" id="lblItemCode"></small></p>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="itemName">Item Name</label>
+                <input class="form-control" id="itemName" placeholder="Item Name" type="text">
+                <p><small class="text-danger pl-1" id="lblItemName"></small></p>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="itemQty">Item Qty</label>
+                <input class="form-control" id="itemQty" placeholder="Item Qty" type="text">
+                <p><small class="text-danger pl-1" id="lblItemQty"></small></p>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="itemPrice">Item Price</label>
+                <input class="form-control" id="itemPrice" placeholder="Item Price" type="text">
+                <p><small class="text-danger pl-1" id="lblItemPrice"></small></p>
+            </div>
+        </div>
+        <div class="col-12 col-md-4">
+            <div class="shadow-sm pt-3 pb-5 px-3 py-3 mt-2">
+                <h1 class="h1 mb-3">Item Manage</h1>
+                <div class="mb-3">
+                    <label class="form-label" for="txtSearchItem">Search Item</label>
+                    <input class="form-control" id="txtSearchItem" placeholder="Item Code,Name,Qty" type="text">
+                </div>
+                <button class="btn btn-primary" id="btnSearch">Search</button>
+                <button class="btn btn-danger">Delete</button>
+                <button class="btn btn-success" id="btnNewItem">Save or Update</button>
+            </div>
+        </div>
+    </section>
+    <section class="row mt-4">
+        <div class="col">
+            <table class="table">
+                <thead class="bg-success text-white">
+                <tr>
+                    <th>Item Code</th>
+                    <th>Item Name</th>
+                    <th>Item Qty</th>
+                    <th>Item Price</th>
+                </tr>
+                </thead>
+                <tbody id="itemTable">
+                </tbody>
+            </table>
+        </div>
+    </section>
+</section>
+
+
+<script src="../../Css%20Frameworks/assets/jQuery/jquery-3.6.0.min.js"></script>
+<script src="../../Css%20Frameworks/assets/js/bootstrap.min.js"></script>
+<script src="../db/DB.js"></script>
+
+<script>
+    $("#oderContent").css('display','block');
+    $("#customerContent").css('display','none');
+    $("#itemContent").css('display','none');
+</script>
+
+</body>
+</html>
