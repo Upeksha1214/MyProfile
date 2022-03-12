@@ -1,3 +1,5 @@
+
+
 loadAllCustomer();
 function customerAddOrUpdate(){
     var id=$("#txtCusID").val();
@@ -109,16 +111,16 @@ const cusSalaryRegEx = /^[0-9]{1,}[.]?[0-9]{1,2}$/;
 $("#btnCustomer").prop('disabled', true);
 
 
-$("#mainDiv input").on('keydown',function (e) {
-    if (e.key == "Tab") {
-        e.preventDefault(); // stop execution of the button
+$("#mainDiv input").on('keydown',function (a) {
+    if (a.key == "Tab") {
+        a.preventDefault(); // stop execution of the button
     }
-    validate(e);
+    validate(a);
     //console.log(e.key);
 
 })
 
-function validate(e){
+function validate(a){
     var id=$("#txtCusID").val();
     var name=$("#txtCusName").val();
     var address=$("#txtCusAddress").val();
@@ -129,7 +131,7 @@ function validate(e){
         $("#txtCusID").css('border', '2px solid green');
         $("#lblcusid").text("");
         $("#btnCustomer").prop('disabled', false);
-        if (e.key=="Enter"){$("#txtCusName").focus()
+        if (a.key=="Enter"){$("#txtCusName").focus()
 
         }
 
@@ -137,19 +139,19 @@ function validate(e){
             $("#txtCusName").css('border', '2px solid green');
             $("#lblcusname").text("");
             $("#btnCustomer").prop('disabled', false);
-            if (e.key=="Enter"){$("#txtCusAddress").focus()}
+            if (a.key=="Enter"){$("#txtCusAddress").focus()}
 
             if (cusAddressRegEx.test(address)){
                 $("#txtCusAddress").css('border', '2px solid green');
                 $("#lblcusaddress").text("");
                 $("#btnCustomer").prop('disabled', false);
-                if (e.key=="Enter"){$("#txtCusSalary").focus()}
+                if (a.key=="Enter"){$("#txtCusSalary").focus()}
 
                 if (cusSalaryRegEx.test(salary)){
                     $("#txtCusSalary").css('border', '2px solid green');
                     $("#lblcussalary").text("");
                     $("#btnCustomer").prop('disabled', false);
-                    if (e.key=="Enter"){ customerAddOrUpdate()  }
+                    if (a.key=="Enter"){ customerAddOrUpdate()  }
                     $("#btnCustomer").prop('disabled', false);
 
                 }else {

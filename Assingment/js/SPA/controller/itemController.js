@@ -114,12 +114,12 @@ $("#mainItemDiv input").on('keydown',function (e) {
     if (e.key == "Tab") {
         e.preventDefault(); // stop execution of the button
     }
-    validate(e);
+    validateItem(e);
     //console.log(e.key);
 
 })
 
-function validate(e){
+function validateItem(e){
     var id=$("#txtItemCode").val();
     var name=$("#txtItemNameName").val();
     var qty=$("#txtItemQty").val();
