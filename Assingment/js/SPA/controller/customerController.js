@@ -17,7 +17,6 @@ function customerAddOrUpdate(){
             customerDB[i].setSalary(salary);
             exitesCustomer=1;
             loadAllCustomer();
-
             break;
 
         }else {
@@ -29,7 +28,6 @@ function customerAddOrUpdate(){
 
         loadAllCustomer();
     }else {
-
     }
 }
 $("#btnCustomer").click(function (){
@@ -153,6 +151,7 @@ function validate(a){
                     $("#btnCustomer").prop('disabled', false);
                     if (a.key=="Enter"){ customerAddOrUpdate()  }
                     $("#btnCustomer").prop('disabled', false);
+
 
                 }else {
                     $("#txtCusSalary").css('border', '2px solid red');

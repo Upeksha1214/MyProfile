@@ -10,7 +10,7 @@
  <br>
  <li style="font-size: 20px"><b>Mockup URL of My Profile designed by figma</b> :- <a href="https://www.figma.com/file/i9QFNhyyuGIzQNzAuFmqz3/My-Profile?node-id=0%3A1" target="_blank">https://www.figma.com/file/ooJCjOQp25zr4At6LmkXCH/MyProfile?node-id=0%3A1</a></li>
  <br>
- <li style="font-size: 20px"><b>Github My Profile Page URL</b> :- <a href="https://upeksha1214.github.io/MyProfile/" target="_blank">https://mkpmmilan.github.io/MyProfile/</a></li>
+ <li style="font-size: 20px"><b>Github My Profile Page URL</b> :- <a href="https://upeksha1214.github.io/MyProfile/" target="_blank">https://upeksha1214.github.io/MyProfile/</a></li>
  <br>
  <li style="font-size: 20px"><b>000WebHost URL</b> :- <a href="" target="_blank">/</a></li>
  </ul>
