@@ -35,4 +35,5 @@ function Customer(id,name,address,salary) {
     this.getSalary=function () {
         return salary;
     }
+
 }
